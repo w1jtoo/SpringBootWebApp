@@ -1,4 +1,4 @@
-package com.javaapp.handlingformsubmission;
+package com.example.demo;
 
 public class Greeting {
 

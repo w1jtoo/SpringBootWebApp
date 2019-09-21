@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8027871-13d5-4e86-a6cb-80b5a82deeb1" name="Default Changelist" comment="" />
+    <list default="true" id="9f7fcbdd-92b6-4fb0-9ef5-6bfc68d4e197" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1R9IsEPuHzFzJJgsPsXjyHJZvmr" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1R9wfr4VYUWC6FjoWhI7MqOZFMT" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/example/demo" />
     <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp\src\handlingformsubmission" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\w1jtoo\Desktop\programming\Java\demo\src\main\java\com\example\demo" />
+      <recent name="C:\Users\w1jtoo\Desktop\programming\Java\demo\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -44,9 +51,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="SpringBootWebAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="SpringBootWebApp" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="net.javaapp.SpringBootWebApp.SpringBootWebAppApplication" />
+    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -57,13 +64,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f8027871-13d5-4e86-a6cb-80b5a82deeb1" name="Default Changelist" comment="" />
-      <created>1569073089340</created>
+      <changelist id="9f7fcbdd-92b6-4fb0-9ef5-6bfc68d4e197" name="Default Changelist" comment="" />
+      <created>1569092725784</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569073089340</updated>
-      <workItem from="1569073097674" duration="3239000" />
-      <workItem from="1569078070716" duration="1116000" />
+      <updated>1569092725784</updated>
+      <workItem from="1569092729884" duration="1719000" />
     </task>
     <servers />
   </component>

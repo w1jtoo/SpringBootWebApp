@@ -1,13 +1,14 @@
-package com.javaapp.handlingformsubmission;
+package com.example.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class GreetingController {
+public class AppController {
 
     @GetMapping("/greeting")
     public String greetingForm(Model model) {
@@ -19,5 +20,4 @@ public class GreetingController {
     public String greetingSubmit(@ModelAttribute Greeting greeting) {
         return "result";
     }
-
 }
