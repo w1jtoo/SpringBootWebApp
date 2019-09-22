@@ -6,7 +6,27 @@
 </head>
 <body>
 <h1>Form</h1>
-<a href="/login">Log In</a>
+
+<script th:inline="javascript">
+    /*<![CDATA[*/
+
+
+    var loggedin = [[${loggedin}]];
+    if (loggedin === 0)
+    {
+        document.writeln('<a href="/login">Log In</a>');
+    }
+    else
+    if (loggedin === 1) {
+        var userName =  [[${user.name}]];
+        document.writeln(userName);
+    }
+    /*]]>*/
+</script>
+
+
+
+
 
 <table style="width:100%">
     <tr>
