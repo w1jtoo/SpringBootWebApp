@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.controllers;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.stereotype.Controller;
@@ -18,7 +18,7 @@ public class CustomErrorController implements ErrorController {
         Exception exception = (Exception) request.getAttribute("javax.servlet.error.exception");
         return String.format("<html><body><h2>Error Page</h2><div>Status code: <b>%s</b></div>"
                         + "<div>Exception Message: <b>%s</b></div><body></html>", statusCode,
-                exception==null ? "N/A" : exception.getMessage());
+                exception == null ? "N/A" : exception.getMessage());
     }
 
     @Override
