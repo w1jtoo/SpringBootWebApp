@@ -12,7 +12,6 @@ public class MainLogicTests {
 
     @Test
     public void ContainerFieldsTest(){
-        var infoContainer = new InfoContainer();
-        assertThat(infoContainer).hasFieldOrProperty("user");
+        assertThat(InfoContainer.getUser()).hasFieldOrProperty("name");
     }
 }

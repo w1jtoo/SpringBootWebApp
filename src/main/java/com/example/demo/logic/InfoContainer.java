@@ -1,15 +1,26 @@
 package com.example.demo.logic;
 
-public class InfoContainer {
-    public InfoContainer() {
-        user = new User();
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public final class InfoContainer {
+
+    public static User getUser() {
+        return user;
     }
 
-    public User user;
-
-    public boolean loggedIn() {
-        return user.getName() == "null";
+    public static Order getOrder() {
+        return order;
     }
-
-    ;
+    public static JSONArray getJson(){
+        var array = new JSONArray();
+        array.put(user);
+        array.put(order);
+        return array;
+    }
+    public static User user = new User();
+    public static Order order = new Order();
 }
