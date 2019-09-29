@@ -21,6 +21,10 @@ public final class InfoContainer {
         array.put(order);
         return array;
     }
+
+    public static void StartNewSession(String name){
+        getUser().setName(name);
+    }
     public static User user = new User();
     public static Order order = new Order();
 }

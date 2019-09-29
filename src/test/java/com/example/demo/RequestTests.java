@@ -1,114 +1,95 @@
 package com.example.demo;
 
 
+import com.example.demo.controllers.OrderRestController;
+import com.example.demo.logic.InfoContainer;
 import com.example.demo.logic.PizzaName;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.http.MediaType;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.reactive.server.WebTestClient;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import java.util.Optional;
 import java.util.Random;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
-@AutoConfigureWebTestClient
+@WebMvcTest(OrderRestController.class)
 public class RequestTests {
 
     @Autowired
-    private TestRestTemplate restTemplate;
+    private MockMvc mvc;
 
     @Autowired
+    private ObjectMapper objectMapper;
+
     private WebTestClient webClient;
 
-    public void setUp(){
+    public void setUp() {
         // default user name
-        this.webClient.get().uri("/login?name=Test");
+        Mockito.when(InfoContainer.getUser());
     }
 
     @Test
-    public void isOkTests() {
-        this.webClient.get().uri("/error").exchange().expectStatus().isOk();
-        this.webClient.get().uri("/login").exchange().expectStatus().isOk();
-        this.webClient.get().uri("/result").exchange().expectStatus().isOk();
-    }
-
-    @Test
-    public void mainTest() {
-        assertThat(true).isTrue();
-    }
-    private PizzaName getRandomPizza(){
-        var random = new Random();
-        var size = PizzaName.values().length;
-        return PizzaName.values()[random.nextInt(size)];
-    }
-    @Test
-    public void addingRealPizzaTest() {
-        var pizza = getRandomPizza();
-        String body = this.restTemplate.getForObject("/addorder?name=" + pizza.toString(), String.class);
-        assertThat(body).isEqualTo(pizza.toString());
-    }
-
-    @Test
-    public void addingNonexistentPizzaTest() {
-        var pizzaName = getRandomPizza().toString() + "1"; //wrong name
-        String body = this.restTemplate.getForObject("/addorder?name=" + pizzaName,
-                String.class);
-        assertThat(body).isEqualTo("No enum constant com.example.demo.logic.PizzaName."
-                + pizzaName);
-    }
-
-    @Test
-    public void removeRightPizza(){
-        var pizzaName = PizzaName.Chicago.toString();
-        this.restTemplate.getForObject("/addorder?name=" + pizzaName, String.class);
-        var body = this.restTemplate
-                .getForObject("/delorder?name=" + pizzaName, String.class);
-        assertThat(body).isEqualTo(pizzaName);
-    }
-
-    @Test
-    public void removeWithWrongPizzaName(){
-        var pizzaName1 = PizzaName.Chicago.toString();
-        var pizzaName2 = "Shicago12";
-        this.restTemplate.getForObject("/addorder?name=" + pizzaName1, String.class);
-        var body = this.restTemplate
-                .getForObject("/delorder?name=" + pizzaName2, String.class);
-        assertThat(body).isEqualTo("No enum constant com.example.demo.logic.PizzaName." + pizzaName2);
-    }
-
-    // TODO result test ? 
-
-    @Test
-    public void removeNonexistentPizza(){
-        var pizzaName = PizzaName.Chicago.toString();
-        var body = this.restTemplate
-                .getForObject("/delorder?name=" + pizzaName, String.class);
-        assertThat(body).isEqualTo("0");
+    public void shouldSwearToWrongPizzaName() throws Exception {
+        mvc
+                .perform(MockMvcRequestBuilders.get("/order/Vasya"))
+                .andExpect(MockMvcResultMatchers.status().isBadRequest());
     }
 
 
     @Test
-    public void errorPageContainCodeTest() {
-        String body = this.restTemplate.getForObject("/error", String.class);
-        assertThat(body).contains("Error Page");
-        assertThat(body).contains("Status code: <b>null</b>");
-        assertThat(body).contains("Exception Message: <b>N/A</b>");
+    public void shouldAddOrder() throws Exception {
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/order")
+                .contentType(MediaType.APPLICATION_JSON)
+                .content(objectMapper.writeValueAsString(PizzaName.Chicago.toString())))
+                .andExpect(MockMvcResultMatchers.status().isOk());
     }
+
     @Test
-    public void errorPageDoesNotContainTest() {
-        String body = this.restTemplate.getForObject("/error", String.class);
-        assertThat(body).doesNotContain("Hello world!");
-        assertThat(body).doesNotContain("Form!");
+    public void shouldDelOrder() throws Exception {
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/order")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(PizzaName.Chicago.toString())))
+                .andExpect(MockMvcResultMatchers.status().isOk());
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .delete("/order/{name}", PizzaName.Chicago.toString()))
+                .andExpect(MockMvcResultMatchers.status().isOk());
     }
 
+    @Test
+    public void shouldNotDelOrder() throws Exception {
 
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/order")
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(PizzaName.Chicago.toString())))
+                .andExpect(MockMvcResultMatchers.status().isOk());
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .delete("/order/{name}", PizzaName.Sicilian.toString()))
+                .andExpect(MockMvcResultMatchers.status().isBadRequest());
+
+    }
 }
