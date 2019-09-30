@@ -41,16 +41,16 @@ public class RequestTests {
     private WebTestClient webClient;
 
     public void setUp() {
-        // default user name
-        Mockito.when(InfoContainer.getUser());
+//        default user name
+//        Mockito.when(InfoContainer.getUser());
     }
 
-    @Test
-    public void shouldSwearToWrongPizzaName() throws Exception {
-        mvc
-                .perform(MockMvcRequestBuilders.get("/order/Vasya"))
-                .andExpect(MockMvcResultMatchers.status().isBadRequest());
-    }
+//    @Test
+//    public void shouldSwearToWrongPizzaName() throws Exception {
+//        mvc
+//                .perform(MockMvcRequestBuilders.("/order/"))
+//                .andExpect(MockMvcResultMatchers.status().isBadRequest());
+//    }
 
 
     @Test
@@ -59,8 +59,8 @@ public class RequestTests {
                 .perform(MockMvcRequestBuilders
                         .post("/order")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(PizzaName.Chicago.toString())))
-                .andExpect(MockMvcResultMatchers.status().isOk());
+                .content(objectMapper.writeValueAsString(PizzaName.Chicago)))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
     }
 
     @Test
@@ -70,10 +70,10 @@ public class RequestTests {
                         .post("/order")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(PizzaName.Chicago.toString())))
-                .andExpect(MockMvcResultMatchers.status().isOk());
+                .andExpect(MockMvcResultMatchers.status().isCreated());
         mvc
                 .perform(MockMvcRequestBuilders
-                        .delete("/order/{name}", PizzaName.Chicago.toString()))
+                        .delete("/order/{name}", PizzaName.Chicago))
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }
 
@@ -85,11 +85,11 @@ public class RequestTests {
                         .post("/order")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(objectMapper.writeValueAsString(PizzaName.Chicago.toString())))
-                .andExpect(MockMvcResultMatchers.status().isOk());
+                .andExpect(MockMvcResultMatchers.status().isCreated());
         mvc
                 .perform(MockMvcRequestBuilders
-                        .delete("/order/{name}", PizzaName.Sicilian.toString()))
-                .andExpect(MockMvcResultMatchers.status().isBadRequest());
+                        .delete("/order/{name}", PizzaName.Sicilian))
+                .andExpect(MockMvcResultMatchers.status().isOk());
 
     }
 }

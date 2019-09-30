@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.logic.InfoContainer;
+import com.example.demo.logic.Order;
 import com.example.demo.logic.PizzaName;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,9 +14,9 @@ import javax.validation.Valid;
 @RequestMapping("/order")
 public class OrderRestController {
 
-    @GetMapping("{name}")
-    public PizzaName addOrder(@PathVariable("name") String name) throws Exception{
-        return PizzaName.valueOf(name);
+    @GetMapping()
+    public Order addOrder() throws Exception{
+        return InfoContainer.getOrder();
     }
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
