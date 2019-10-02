@@ -40,18 +40,6 @@ public class RequestTests {
 
     private WebTestClient webClient;
 
-    public void setUp() {
-//        default user name
-//        Mockito.when(InfoContainer.getUser());
-    }
-
-//    @Test
-//    public void shouldSwearToWrongPizzaName() throws Exception {
-//        mvc
-//                .perform(MockMvcRequestBuilders.("/order/"))
-//                .andExpect(MockMvcResultMatchers.status().isBadRequest());
-//    }
-
 
     @Test
     public void shouldAddOrder() throws Exception {

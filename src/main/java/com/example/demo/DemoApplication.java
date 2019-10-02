@@ -10,7 +10,7 @@ public class DemoApplication {
 		 -read  - OOP MVC, DI : 24.09 DONE
 		 -add tests : 24.09 DONE
 		 -use json : some questions DONE
-		 -add right tests and logic tests ALMOST  
+		 -add right tests and logic tests ALMOST
 		 -use date base : ORM  with hibernabe
 	*/
 
