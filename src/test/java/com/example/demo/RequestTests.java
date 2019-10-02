@@ -4,6 +4,7 @@ package com.example.demo;
 import com.example.demo.controllers.OrderRestController;
 import com.example.demo.logic.InfoContainer;
 import com.example.demo.logic.PizzaName;
+import com.example.demo.logic.User;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
@@ -79,5 +80,17 @@ public class RequestTests {
                         .delete("/order/{name}", PizzaName.Sicilian))
                 .andExpect(MockMvcResultMatchers.status().isOk());
 
+    }
+    @Test
+    public void logIn() throws Exception {
+        var user = new User();
+        user.setName("Vasya");
+        user.setPhoneNumber("123456");
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .get("/login", user)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(PizzaName.Chicago)))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
     }
 }

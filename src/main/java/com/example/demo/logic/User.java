@@ -1,8 +1,16 @@
 package com.example.demo.logic;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="USER_REGISTRED")
 public class User {
+    @Id
+    @GeneratedValue
     private String name;
+    @Column(name="phone_number")
     private String phoneNumber;
+    @Column(name="orders_count")
     private int countOfOrders;
 
     public String getName() {
