@@ -26,21 +26,23 @@ public class LoginRestController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity logInForm(@Valid @RequestBody String name) {
-        // TODO use right way of initialize
-        logger.info("User " + name + "try to log in.");
+        // TODO иницализировать user правильно
+        logger.info("User " + name + " tries to log in.");
         if (user.existsById(name)) {
             InfoContainer.StartNewSession(user.getOne(name));
             return ResponseEntity.ok().build();
         }
         else
             {
-                return ResponseEntity.notFound().build();
+                logger.info("User " + name + " does not exist.");
+                return ResponseEntity.badRequest().build();
             }
     }
 
     @DeleteMapping
     public ResponseEntity delOrder() {
         InfoContainer.LogOut();
+        logger.info("User tries to log out.");
         return ResponseEntity.ok().build();
     }
 }

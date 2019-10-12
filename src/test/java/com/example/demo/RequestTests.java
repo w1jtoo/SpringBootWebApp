@@ -74,15 +74,90 @@ import static org.assertj.core.api.Assertions.assertThat;
 
     }
     @Test
-    public void logIn() throws Exception {
+    public void shouldRegister() throws Exception {
         var user = new User();
         user.setName("Vasya");
         user.setPhoneNumber("123456");
         mvc
                 .perform(MockMvcRequestBuilders
-                        .get("/login", user)
+                        .post("/register", user)
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(PizzaName.Chicago)))
+                        .content(objectMapper.writeValueAsString(user)))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
+    }
+
+    @Test
+    public void shouldNotRegisterBecauseOfAlreadyExists() throws Exception {
+        var user = new User();
+        user.setName("Vasya");
+        user.setPhoneNumber("123456");
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/register", user)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(user)))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
+
+        user.setName("Vasya");
+        user.setPhoneNumber("123456");
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/register", user)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(user)))
+                .andExpect(MockMvcResultMatchers.status().isBadRequest());
+    }
+
+
+    @Test
+    public void shouldLogIn() throws Exception {
+        var user = new User();
+        user.setName("Vasya");
+        user.setPhoneNumber("123456");
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/register", user)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(user)))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
+
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .delete("/login/{name}", user))
                 .andExpect(MockMvcResultMatchers.status().isOk());
+
+    }
+
+    @Test
+    public void shouldLogOut() throws Exception {
+        var user = new User();
+        user.setName("Vasya");
+        user.setPhoneNumber("123456");
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/register", user)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(user)))
+                .andExpect(MockMvcResultMatchers.status().isCreated());
+
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/login", user)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(user)))
+                .andExpect(MockMvcResultMatchers.status().isOk());
+    }
+
+    @Test
+    public void shouldNotLogInWithRealUser() throws Exception {
+        var user = new User();
+        user.setName("Vasya");
+        user.setPhoneNumber("123456");
+        mvc
+                .perform(MockMvcRequestBuilders
+                        .post("/login", user)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(objectMapper.writeValueAsString(user)))
+                .andExpect(MockMvcResultMatchers.status().isBadRequest());
     }
 }

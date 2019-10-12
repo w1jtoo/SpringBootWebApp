@@ -422,3 +422,350 @@ Caused by: java.sql.SQLFeatureNotSupportedException: Метод org.postgresql.j
 2019-10-12 19:08:24,743 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Initializing Servlet 'dispatcherServlet'
 2019-10-12 19:08:24,753 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8089-exec-1] Completed initialization in 9 ms
 2019-10-12 19:08:24,780 INFO com.example.demo.logic.controllers.LoginRestController [http-nio-8089-exec-1] Show user state.
+2019-10-12 22:39:56,867 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 22:39:56,896 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 3032 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 22:39:56,902 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 22:39:59,866 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:40:00,730 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-10-12 22:40:00,734 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-10-12 22:40:00,760 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 25 ms
+2019-10-12 22:40:00,908 INFO org.springframework.boot.StartupInfoLogger [main] Started RequestTests in 5.38 seconds (JVM running for 7.758)
+2019-10-12 22:40:03,312 INFO com.example.demo.logic.controllers.LoginRestController [main] Show user state.
+2019-10-12 22:40:03,413 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:43:18,535 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 22:43:18,570 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 12264 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 22:43:18,575 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 22:43:21,434 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:43:21,954 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-10-12 22:43:21,955 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-10-12 22:43:21,980 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 25 ms
+2019-10-12 22:43:22,065 INFO org.springframework.boot.StartupInfoLogger [main] Started RequestTests in 5.659 seconds (JVM running for 8.78)
+2019-10-12 22:43:22,865 INFO com.example.demo.logic.controllers.LoginRestController [main] User "Chicago"try to log in.
+2019-10-12 22:43:22,899 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:43:32,929 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 22:43:32,966 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 11444 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 22:43:32,970 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 22:43:35,577 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:43:36,056 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-10-12 22:43:36,057 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-10-12 22:43:36,077 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 19 ms
+2019-10-12 22:43:36,127 INFO org.springframework.boot.StartupInfoLogger [main] Started RequestTests in 4.486 seconds (JVM running for 6.161)
+2019-10-12 22:43:36,895 INFO com.example.demo.logic.controllers.LoginRestController [main] User "Chicago"try to log in.
+2019-10-12 22:43:36,930 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:44:55,210 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 22:44:55,240 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 9072 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 22:44:55,249 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 22:44:56,791 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRestController': Unsatisfied dependency expressed through field 'user'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.logic.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-10-12 22:44:56,803 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-12 22:44:56,886 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field user in com.example.demo.logic.controllers.LoginRestController required a bean of type 'com.example.demo.logic.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.logic.UserRepository' in your configuration.
+
+2019-10-12 22:44:57,009 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 22:44:57,016 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 9072 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 22:44:57,019 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 22:44:57,389 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRestController': Unsatisfied dependency expressed through field 'user'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.logic.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-10-12 22:44:57,391 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-10-12 22:44:57,437 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field user in com.example.demo.logic.controllers.LoginRestController required a bean of type 'com.example.demo.logic.UserRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.demo.logic.UserRepository' in your configuration.
+
+2019-10-12 22:44:57,445 ERROR org.springframework.test.context.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3d285d7e] to prepare test instance [com.example.demo.RequestTests@31f9b85e]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:43)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'loginRestController': Unsatisfied dependency expressed through field 'user'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.logic.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1411)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.logic.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1658)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1217)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 43 common frames omitted
+2019-10-12 22:46:15,018 INFO org.springframework.boot.StartupInfoLogger [main] Starting DemoApplication on MACHINE-0EN2R4S with PID 5924 (C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp\target\classes started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 22:46:15,022 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 22:46:15,973 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-12 22:46:16,047 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 62ms. Found 1 repository interfaces.
+2019-10-12 22:46:16,402 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d6e248b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-12 22:46:16,675 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8089 (http)
+2019-10-12 22:46:16,693 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8089"]
+2019-10-12 22:46:16,704 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-10-12 22:46:16,704 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-10-12 22:46:16,830 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-10-12 22:46:16,831 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1748 ms
+2019-10-12 22:46:16,940 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2019-10-12 22:46:17,093 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2019-10-12 22:46:17,984 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-10-12 22:46:17,989 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM public.databasechangeloglock
+2019-10-12 22:46:17,991 INFO liquibase.logging.core.Slf4jLogger [main] SELECT LOCKED FROM public.databasechangeloglock WHERE ID=1
+2019-10-12 22:46:18,008 INFO liquibase.logging.core.Slf4jLogger [main] Successfully acquired change log lock
+2019-10-12 22:46:18,798 INFO liquibase.logging.core.Slf4jLogger [main] SELECT MD5SUM FROM public.databasechangelog WHERE MD5SUM IS NOT NULL LIMIT 1
+2019-10-12 22:46:18,800 INFO liquibase.logging.core.Slf4jLogger [main] SELECT COUNT(*) FROM public.databasechangelog
+2019-10-12 22:46:18,801 INFO liquibase.logging.core.Slf4jLogger [main] Reading from public.databasechangelog
+2019-10-12 22:46:18,802 INFO liquibase.logging.core.Slf4jLogger [main] SELECT * FROM public.databasechangelog ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+2019-10-12 22:46:18,818 INFO liquibase.logging.core.Slf4jLogger [main] Successfully released change log lock
+2019-10-12 22:46:18,954 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-12 22:46:19,056 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.11.Final}
+2019-10-12 22:46:19,059 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2019-10-12 22:46:19,181 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-12 22:46:19,346 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2019-10-12 22:46:19,420 INFO org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl [main] HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.useContextualLobCreation(LobCreatorBuilderImpl.java:113)
+	at org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl.makeLobCreatorBuilder(LobCreatorBuilderImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentImpl.<init>(JdbcEnvironmentImpl.java:271)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:114)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:94)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:179)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:119)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:19)
+Caused by: java.sql.SQLFeatureNotSupportedException: Метод org.postgresql.jdbc.PgConnection.createClob() ещё не реализован
+	at org.postgresql.Driver.notImplemented(Driver.java:692)
+	at org.postgresql.jdbc.PgConnection.createClob(PgConnection.java:1265)
+	... 44 common frames omitted
+2019-10-12 22:46:19,428 INFO org.hibernate.type.BasicTypeRegistry [main] HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@320770d7
+2019-10-12 22:46:19,934 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-12 22:46:20,337 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 22:46:20,367 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-12 22:46:20,898 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8089"]
+2019-10-12 22:46:20,918 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8089 (http) with context path ''
+2019-10-12 22:46:20,922 INFO org.springframework.boot.StartupInfoLogger [main] Started DemoApplication in 6.704 seconds (JVM running for 8.114)
+2019-10-12 23:09:11,445 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 23:09:11,484 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 9144 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 23:09:11,488 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 23:09:14,142 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 23:09:14,658 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-10-12 23:09:14,659 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-10-12 23:09:14,688 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 28 ms
+2019-10-12 23:09:14,771 INFO org.springframework.boot.StartupInfoLogger [main] Started RequestTests in 4.707 seconds (JVM running for 6.453)
+2019-10-12 23:09:15,601 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [main] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-10-12 23:09:15,642 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [main] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-10-12 23:09:15,731 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:09:15,750 INFO com.example.demo.logic.controllers.OrderRestController [main] Delete pizza - Chicago to course.
+2019-10-12 23:09:15,764 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:09:15,768 INFO com.example.demo.logic.controllers.OrderRestController [main] Delete pizza - Sicilian to course.
+2019-10-12 23:09:15,779 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [main] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-10-12 23:09:15,843 INFO com.example.demo.logic.controllers.LoginRestController [main] User "Chicago" tries to log in.
+2019-10-12 23:09:15,864 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:09:15,876 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 23:13:31,444 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 23:13:31,533 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 11656 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 23:13:31,542 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 23:13:34,005 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 23:13:34,490 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-10-12 23:13:34,491 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-10-12 23:13:34,514 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 22 ms
+2019-10-12 23:13:34,566 INFO org.springframework.boot.StartupInfoLogger [main] Started RequestTests in 4.513 seconds (JVM running for 6.269)
+2019-10-12 23:13:35,325 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [main] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-10-12 23:13:35,360 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [main] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-10-12 23:13:35,453 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:13:35,468 INFO com.example.demo.logic.controllers.OrderRestController [main] Delete pizza - Chicago to course.
+2019-10-12 23:13:35,477 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:13:35,481 INFO com.example.demo.logic.controllers.OrderRestController [main] Delete pizza - Sicilian to course.
+2019-10-12 23:13:35,495 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [main] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-10-12 23:13:35,567 INFO com.example.demo.logic.controllers.LoginRestController [main] User "Chicago" tries to log in.
+2019-10-12 23:13:35,588 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:13:35,598 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
+2019-10-12 23:17:22,556 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/w1jtoo/.m2/repository/org/json/json/20180130/json-20180130.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/w1jtoo/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2019-10-12 23:17:22,609 INFO org.springframework.boot.StartupInfoLogger [main] Starting RequestTests on MACHINE-0EN2R4S with PID 5412 (started by w1jtoo in C:\Users\w1jtoo\Desktop\programming\Java\SpringBootWebApp)
+2019-10-12 23:17:22,616 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-10-12 23:17:25,350 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-12 23:17:25,881 INFO org.springframework.mock.web.MockServletContext [main] Initializing Spring TestDispatcherServlet ''
+2019-10-12 23:17:25,882 INFO org.springframework.web.servlet.FrameworkServlet [main] Initializing Servlet ''
+2019-10-12 23:17:25,904 INFO org.springframework.web.servlet.FrameworkServlet [main] Completed initialization in 20 ms
+2019-10-12 23:17:25,963 INFO org.springframework.boot.StartupInfoLogger [main] Started RequestTests in 4.86 seconds (JVM running for 6.656)
+2019-10-12 23:17:26,643 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [main] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago'); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot construct instance of `com.example.demo.logic.User` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('Chicago')
+ at [Source: (PushbackInputStream); line: 1, column: 1]]
+2019-10-12 23:17:26,733 INFO com.example.demo.logic.controllers.RegisterController [main] Register new user.
+2019-10-12 23:17:26,750 INFO com.example.demo.logic.controllers.RegisterController [main] Register new user.
+2019-10-12 23:17:26,793 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:17:26,818 INFO com.example.demo.logic.controllers.OrderRestController [main] Delete pizza - Chicago to course.
+2019-10-12 23:17:26,840 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:17:26,849 INFO com.example.demo.logic.controllers.OrderRestController [main] Delete pizza - Sicilian to course.
+2019-10-12 23:17:26,867 INFO com.example.demo.logic.controllers.RegisterController [main] Register new user.
+2019-10-12 23:17:26,929 INFO com.example.demo.logic.controllers.LoginRestController [main] User {"name":"Vasya","phoneNumber":"123456","countOfOrders":0} tries to log in.
+2019-10-12 23:17:26,945 INFO com.example.demo.logic.controllers.OrderRestController [main] Add pizza - Chicago to course.
+2019-10-12 23:17:26,960 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [Thread-1] Shutting down ExecutorService 'applicationTaskExecutor'
